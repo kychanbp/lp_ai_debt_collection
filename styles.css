@@ -526,19 +526,48 @@ nav {
     }
 }
 
-/* Add hamburger menu button */
+/* Mobile Menu Button */
 .mobile-menu-button {
-    display: none;
+    display: none;  /* Hidden by default on desktop */
     background: none;
     border: none;
     color: var(--text-color);
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .mobile-menu-button:focus {
     outline: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-button {
+        display: block;  /* Only show on mobile */
+        z-index: 101;
+    }
+
+    .nav-links {
+        display: none;  /* Hide by default on mobile */
+    }
+
+    .nav-links.active {
+        display: flex;  /* Show when active */
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 80%;
+        max-width: 400px;
+        background: var(--background);
+        flex-direction: column;
+        padding: 5rem 2rem;
+        z-index: 100;
+    }
 }
 
 /* Add to existing header styles */
