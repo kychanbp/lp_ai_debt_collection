@@ -55,10 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            // Get form data
-            const formData = new FormData(form);
-            const data = Object.fromEntries(formData);
-            
             // Show loading state
             const submitButton = form.querySelector('button[type="submit"]');
             const originalText = submitButton.textContent;
@@ -66,26 +62,34 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             
             try {
-                // Simulate API call
-                await new Promise(resolve => setTimeout(resolve, 1500));
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
                 
-                // Show success message
-                form.reset();
-                submitButton.innerHTML = '<i class="fas fa-check"></i> Sent Successfully';
-                setTimeout(() => {
-                    submitButton.disabled = false;
-                    submitButton.textContent = originalText;
-                }, 2000);
+                const data = await response.json();
                 
-                // Show success modal or message
-                alert('Thank you for your interest! We will contact you soon.');
+                if (response.ok) {
+                    // Show success message
+                    form.reset();
+                    submitButton.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                    setTimeout(() => {
+                        submitButton.disabled = false;
+                        submitButton.textContent = originalText;
+                    }, 3000);
+                } else {
+                    throw new Error(data.error || 'Form submission failed');
+                }
             } catch (error) {
                 console.error('Error:', error);
                 submitButton.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error';
                 setTimeout(() => {
                     submitButton.disabled = false;
                     submitButton.textContent = originalText;
-                }, 2000);
+                }, 3000);
             }
         });
     }
