@@ -198,4 +198,20 @@ document.addEventListener('DOMContentLoaded', function() {
             icon.classList.remove('fa-times');
         }
     });
+
+    // Smooth scroll to contact form
+    document.querySelectorAll('a[href="#contact"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const formTop = contactForm.getBoundingClientRect().top + window.pageYOffset;
+                window.scrollTo({
+                    top: formTop - headerHeight - 20, // 20px additional padding
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 }); 
