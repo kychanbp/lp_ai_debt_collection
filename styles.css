@@ -394,28 +394,61 @@ nav {
 @media (max-width: 1024px) {
     .hero-layout {
         flex-direction: column;
+        padding: 6rem 2rem 2rem;
+        gap: 2rem;
         text-align: center;
-        padding: 2rem;
     }
 
     .hero-content {
-        max-width: 800px;
-        margin: 0 auto;
         align-items: center;
     }
 
     .hero h1 {
         font-size: 3.5rem;
+        text-align: center;
     }
 
-    .hero-cta {
-        justify-content: center;
+    .hero-description {
+        text-align: center;
+    }
+
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
+    /* Navigation */
+    nav {
+        padding: 1rem;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 80%;
+        max-width: 400px;
+        background: var(--background);
+        flex-direction: column;
+        padding: 5rem 2rem;
+        transition: right 0.3s ease;
+        z-index: 100;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .mobile-menu-button {
+        display: block;
+        z-index: 101;
+    }
+
+    /* Hero Section */
     .hero {
-        padding: 6rem 0 4rem;
+        margin-top: -80px;
     }
 
     .hero h1 {
@@ -423,8 +456,107 @@ nav {
     }
 
     .hero-description {
-        font-size: 1.125rem;
+        font-size: 1.1rem;
     }
+
+    .code-preview {
+        margin: 0 -1rem;
+        border-radius: 0;
+    }
+
+    /* Features Section */
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .feature-item {
+        padding: 1.5rem;
+    }
+
+    /* Benefits Section */
+    .benefit-item {
+        padding: 2rem 1.5rem;
+    }
+
+    .benefit-item .stat {
+        font-size: 2.5rem;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        padding: 3rem 1rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    /* General Spacing */
+    .section {
+        padding: 3rem 1rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .logo-text {
+        display: none;
+    }
+
+    .code-tabs {
+        gap: 1rem;
+    }
+
+    .code-tabs button {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Add hamburger menu button */
+.mobile-menu-button {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.mobile-menu-button:focus {
+    outline: none;
+}
+
+/* Add to existing header styles */
+header {
+    position: sticky;
+}
+
+/* Add to existing form styles */
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+/* Add to existing container styles */
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 /* Features Grid */
