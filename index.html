@@ -3,134 +3,321 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Debt Collection Agent - Smart, Scalable, Cost-Effective</title>
+    <title>BellmanLoop | Smart, Scalable, Cost-Effective Debt Collection</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">AI Debt Collection</div>
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <span>B</span>
+                </div>
+                <span class="logo-text">BellmanLoop</span>
+            </a>
             <div class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#benefits">Benefits</a>
-                <a href="#contact">Contact</a>
+                <a href="#contact" class="nav-cta-button">Contact Sales</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="hero-content">
-                <h1>Revolutionize Debt Collection with AI</h1>
-                <p>A Smarter, Scalable, and Cost-Effective Solution</p>
-                <a href="#contact" class="cta-button">Get Started</a>
-            </div>
-        </section>
-
-        <section id="pain-point" class="section">
             <div class="container">
-                <h2>Tired of the Challenges in Managing Human Teams?</h2>
-                <p>Managing a team of debt collectors can be unpredictable and time-consuming. Productivity varies, quality control is a constant struggle, and scaling your team to meet demand often requires significant investment in hiring, training, and oversight.</p>
+                <div class="hero-layout">
+                    <div class="hero-content">
+                        <h1>Upgrade to Smarter Debt Recovery with BellmanLoop AI</h1>
+                        <p class="hero-description">Managing a team of debt collectors can be unpredictable and time-consuming. Productivity varies, quality control is a constant struggle, and scaling your team to meet demand often requires significant investment in hiring, training, and oversight.</p>
+                        <div class="hero-cta">
+                            <a href="#contact" class="cta-button">Contact us <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="code-preview">
+                            <div class="code-header">
+                                <div class="code-tabs">
+                                    <button class="tab active" data-lang="python">Python</button>
+                                    <button class="tab" data-lang="nodejs">Node.js</button>
+                                    <button class="tab" data-lang="ruby">Ruby</button>
+                                </div>
+                            </div>
+                            <div class="code-content">
+                                <pre class="code-sample active" data-lang="python"><code class="language-python">
+# Initialize AI Debt Collection Agent
+from ai_debt_collection import Agent
+
+agent = Agent(
+    model="advanced",
+    compliance_level="strict",
+    languages=["en", "es", "zh"]
+)
+
+# Handle multiple cases simultaneously
+async def process_cases(cases):
+    results = await agent.bulk_process(
+        cases,
+        strategy="optimal",
+        max_concurrent=1000
+    )
+    
+    return {
+        "success_rate": results.success_rate,
+        "recovery_amount": results.total_recovered,
+        "compliance_score": results.compliance_score
+    }</code></pre>
+                                <pre class="code-sample" data-lang="nodejs"><code class="language-javascript">
+// Initialize AI Debt Collection Agent
+const { Agent } = require('ai-debt-collection');
+
+const agent = new Agent({
+    model: 'advanced',
+    complianceLevel: 'strict',
+    languages: ['en', 'es', 'zh']
+});
+
+// Handle multiple cases simultaneously
+async function processCases(cases) {
+    const results = await agent.bulkProcess(
+        cases,
+        {
+            strategy: 'optimal',
+            maxConcurrent: 1000
+        }
+    );
+    
+    return {
+        successRate: results.successRate,
+        recoveryAmount: results.totalRecovered,
+        complianceScore: results.complianceScore
+    };</code></pre>
+                                <pre class="code-sample" data-lang="ruby"><code class="language-ruby">
+# Initialize AI Debt Collection Agent
+require 'ai_debt_collection'
+
+agent = AIDebtCollection::Agent.new(
+  model: 'advanced',
+  compliance_level: 'strict',
+  languages: ['en', 'es', 'zh']
+)
+
+# Handle multiple cases simultaneously
+def process_cases(cases)
+  results = agent.bulk_process(
+    cases,
+    strategy: 'optimal',
+    max_concurrent: 1000
+  )
+  
+  {
+    success_rate: results.success_rate,
+    recovery_amount: results.total_recovered,
+    compliance_score: results.compliance_score
+  }
+end</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="features" class="section">
             <div class="container">
-                <h2>Why Choose Our AI Debt Collection Agent?</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-rocket"></i>
-                        <h3>Boost Productivity</h3>
-                        <p>Eliminate productivity dips with consistent 24/7 performance. No more management hassles or human limitations.</p>
+                <div class="features-layout">
+                    <div class="features-content">
+                        <h2>Bring your vision to life</h2>
+                        <p class="section-description">Our AI can handle any debt collection scenario, any communication style, any compliance requirement. Any use case you can imagine can be automated.</p>
                     </div>
-                    <div class="feature-card">
-                        <i class="fas fa-expand-arrows-alt"></i>
-                        <h3>Flexible and Scalable</h3>
-                        <p>Pay-as-you-go model with instant scalability to meet your changing needs.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-check-circle"></i>
-                        <h3>Unmatched Consistency</h3>
-                        <p>Standardized performance and compliance across all interactions.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-brain"></i>
-                        <h3>Self-Improving AI</h3>
-                        <p>Continuous learning and optimization through reinforcement learning.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-database"></i>
-                        <h3>Accurate Data Recording</h3>
-                        <p>Real-time updates and detailed logs for perfect recordkeeping.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Lower Costs, Higher Returns</h3>
-                        <p>Reduce operational costs while improving collection rates.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3>Consistency & Quality</h3>
+                            <p>Standardized performance across all interactions with consistent communication style and enhanced compliance with regulatory requirements.</p>
+                            <a href="#contact" class="feature-link">Learn more</a>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                            <h3>Flexible & Scalable</h3>
+                            <p>Expand or shrink operations effortlessly with pay-as-you-go pricing. Quickly adjust capacity to meet changing needs.</p>
+                            <a href="#contact" class="feature-link">Get started</a>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Self-Learning System</h3>
+                            <p>Continuously improves through reinforcement learning, optimizing strategies based on past interactions and outcomes.</p>
+                            <a href="#contact" class="feature-link">Discover more</a>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Real-time Analytics</h3>
+                            <p>Comprehensive dashboards with actionable insights into performance, outcomes, and collection strategies.</p>
+                            <a href="#contact" class="feature-link">Learn more</a>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Multi-Channel Support</h3>
+                            <p>Engage effectively through any communication channel with tailored strategies to match your brand voice.</p>
+                            <a href="#contact" class="feature-link">Get started</a>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h3>Multi-language Support</h3>
+                            <p>Communicate effectively in multiple languages, ensuring clear and culturally appropriate debt collection across diverse communities.</p>
+                            <a href="#contact" class="feature-link">Discover more</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="benefits" class="section highlight">
+        <section id="benefits" class="section">
             <div class="container">
-                <h2>What Makes Us Stand Out?</h2>
+                <h2>Transform Your Operations</h2>
+                <p class="section-description">Experience the future of debt collection with our AI-powered solution that scales with your business.</p>
+
                 <div class="benefits-list">
                     <div class="benefit-item">
-                        <i class="fas fa-comments"></i>
-                        <p>Tailored communication strategies to match your brand voice</p>
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Higher Recovery Rate</h3>
+                        <div class="stat">2.5x</div>
+                        <p>Optimize collection strategies in real-time with AI-driven insights, leading to significantly improved recovery rates per dollar invested.</p>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-chart-bar"></i>
-                        <p>Advanced sentiment analysis and customer behavior modeling</p>
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>Cost Reduction</h3>
+                        <div class="stat">-60%</div>
+                        <p>Reduce operational costs dramatically while maintaining or improving collection rates through automated, efficient processes.</p>
                     </div>
                     <div class="benefit-item">
-                        <i class="fas fa-analytics"></i>
-                        <p>Integrated analytics for actionable insights</p>
+                        <i class="fas fa-heart"></i>
+                        <h3>Enhanced Satisfaction</h3>
+                        <div class="stat">95%</div>
+                        <p>Improve customer experience with consistent, professional interactions and personalized communication strategies.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section contact-section">
             <div class="container">
-                <h2>Transform Your Debt Collection Strategy Today</h2>
-                <p>Ready to reduce costs, improve recovery rates, and simplify your operations?</p>
-                <form id="contact-form" class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <input type="tel" placeholder="Your Phone">
-                    <textarea placeholder="Message" required></textarea>
-                    <button type="submit" class="cta-button">Request Demo</button>
-                </form>
+                <div class="contact-layout">
+                    <div class="contact-image">
+                        <img src="mosaic question mark.webp" alt="Stylized question mark illustration" class="question-mark-image">
+                    </div>
+                    <div class="contact-content">
+                        <h2>Ready to transform your debt collection?</h2>
+                        <p>Contact our team to learn more about our AI-powered solution and pricing for your business.</p>
+                        
+                        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xdkopdrv" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="Last Name">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="company">Company Name</label>
+                                    <input type="text" id="company" name="Company">
+                                </div>
+                                <div class="form-group">
+                                    <label for="jobTitle">Job Title</label>
+                                    <input type="text" id="jobTitle" name="Job Title">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message"></textarea>
+                            </div>
+                            
+                            <div class="form-consent">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" name="Consent" value="Agreed to receive communications">
+                                    <span class="checkmark"></span>
+                                    <span class="consent-text">
+                                        I agree to receive communications from BellmanLoop.
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
+        <div class="footer-wrapper">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>Email: info@aidebtcollection.com</p>
-                    <p>Phone: (555) 123-4567</p>
+                    <h3>Product</h3>
+                    <a href="#features">Features</a>
+                    <a href="#benefits">Benefits</a>
                 </div>
                 <div class="footer-section">
-                    <h3>Follow Us</h3>
+                    <h3>Company</h3>
+                    <a href="#">About Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <a href="mailto:contact@bellmanloop.com">contact@bellmanloop.com</a>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 AI Debt Collection. All rights reserved.</p>
+                <p>&copy; 2024 BellmanLoop. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-ruby.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
