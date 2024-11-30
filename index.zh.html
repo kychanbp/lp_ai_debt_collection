@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BellmanLoop | Cobrança de Dívidas Inteligente, Escalável e Econômica</title>
+    <title>博伦 | 智能、可扩展、高性价比的债务催收</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,18 +30,18 @@
                 <div class="logo-icon">
                     <span>B</span>
                 </div>
-                <span class="logo-text">BellmanLoop</span>
+                <span class="logo-text">博伦</span>
             </a>
             <button class="mobile-menu-button">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="nav-links">
-                <a href="#features">Recursos</a>
-                <a href="#benefits">Benefícios</a>
+                <a href="#features">功能</a>
+                <a href="#benefits">优势</a>
                 <div class="language-switcher">
                     <button class="language-button">
-                        <span class="flag-icon">🇧🇷</span>
-                        <span class="language-text">Português</span>
+                        <span class="flag-icon">🇨🇳</span>
+                        <span class="language-text">中文</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="language-dropdown">
@@ -49,17 +49,17 @@
                             <span class="flag-icon">🇺🇸</span>
                             <span class="language-name">English</span>
                         </a>
-                        <a href="index.pt.html" class="language-option active">
+                        <a href="index.pt.html" class="language-option">
                             <span class="flag-icon">🇧🇷</span>
                             <span class="language-name">Português</span>
                         </a>
-                        <a href="index.zh.html" class="language-option">
+                        <a href="index.zh.html" class="language-option active">
                             <span class="flag-icon">🇨🇳</span>
                             <span class="language-name">中文</span>
                         </a>
                     </div>
                 </div>
-                <a href="#contact" class="nav-cta-button">Contato Comercial</a>
+                <a href="#contact" class="nav-cta-button">联系销售</a>
             </div>
         </nav>
     </header>
@@ -69,10 +69,10 @@
             <div class="container">
                 <div class="hero-layout">
                     <div class="hero-content">
-                        <h1>Modernize a Recuperação de Dívidas com BellmanLoop AI</h1>
-                        <p class="hero-description">Gerenciar uma equipe de cobradores de dívidas <span class="highlight">humanos</span> pode ser imprevisível e demorado. A <span class="highlight">produtividade</span> varia, o <span class="highlight">controle de qualidade</span> é uma luta constante, e <span class="highlight">escalar</span> sua equipe para atender à demanda geralmente requer investimento significativo em contratação, treinamento e supervisão.</p>
+                        <h1>使用博伦AI升级您的债务催收</h1>
+                        <p class="hero-description">管理<span class="highlight">人工</span>催收团队可能难以预测且耗时。<span class="highlight">生产力</span>波动，<span class="highlight">质量控制</span>是一场持续的挑战，而且为了满足需求而<span class="highlight">扩大</span>团队规模通常需要在招聘、培训和监督方面投入大量资金。</p>
                         <div class="hero-cta">
-                            <a href="#contact" class="cta-button">Entre em contato <i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="cta-button">联系我们 <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="hero-visual">
@@ -86,42 +86,42 @@
                             </div>
                             <div class="code-content">
                                 <pre class="code-sample active" data-lang="python"><code class="language-python">
-# Inicializar Agente de Cobrança AI
+# 初始化AI催收代理
 from ai_debt_collection import Agent
 
 agent = Agent(
     model="advanced",
     compliance_level="strict",
-    languages=["pt", "en", "es"]
+    languages=["zh", "en", "pt"]
 )
 
-# Processar múltiplos casos simultaneamente
-async def processar_casos(casos):
-    resultados = await agent.bulk_process(
-        casos,
+# 同时处理多个案件
+async def process_cases(cases):
+    results = await agent.bulk_process(
+        cases,
         strategy="optimal",
         max_concurrent=1000
     )
     
     return {
-        "taxa_sucesso": resultados.success_rate,
-        "valor_recuperado": resultados.total_recovered,
-        "pontuacao_conformidade": resultados.compliance_score
+        "成功率": results.success_rate,
+        "回收金额": results.total_recovered,
+        "合规分数": results.compliance_score
     }</code></pre>
                                 <pre class="code-sample" data-lang="nodejs"><code class="language-javascript">
-// Inicializar Agente de Cobrança AI
-const { Agent } = require('ai-debt-collection');
+// 初始化AI催收代理
+const { Agent } = require('ai-debt_collection');
 
 const agent = new Agent({
     model: 'advanced',
     complianceLevel: 'strict',
-    languages: ['pt', 'en', 'es']
+    languages: ['zh', 'en', 'pt']
 });
 
-// Processar múltiplos casos simultaneamente
-async function processarCasos(casos) {
-    const resultados = await agent.bulkProcess(
-        casos,
+// 同时处理多个案件
+async function processCases(cases) {
+    const results = await agent.bulkProcess(
+        cases,
         {
             strategy: 'optimal',
             maxConcurrent: 1000
@@ -129,32 +129,32 @@ async function processarCasos(casos) {
     );
     
     return {
-        taxaSucesso: resultados.successRate,
-        valorRecuperado: resultados.totalRecovered,
-        pontuacaoConformidade: resultados.complianceScore
+        成功率: results.successRate,
+        回收金额: results.totalRecovered,
+        合规分数: results.complianceScore
     };</code></pre>
                                 <pre class="code-sample" data-lang="ruby"><code class="language-ruby">
-# Inicializar Agente de Cobrança AI
+# 初始化AI催收代理
 require 'ai_debt_collection'
 
 agent = AIDebtCollection::Agent.new(
   model: 'advanced',
   compliance_level: 'strict',
-  languages: ['pt', 'en', 'es']
+  languages: ['zh', 'en', 'pt']
 )
 
-# Processar múltiplos casos simultaneamente
-def processar_casos(casos)
-  resultados = agent.bulk_process(
-    casos,
+# 同时处理多个案件
+def process_cases(cases)
+  results = agent.bulk_process(
+    cases,
     strategy: 'optimal',
     max_concurrent: 1000
   )
   
   {
-    taxa_sucesso: resultados.success_rate,
-    valor_recuperado: resultados.total_recovered,
-    pontuacao_conformidade: resultados.compliance_score
+    成功率: results.success_rate,
+    回收金额: results.total_recovered,
+    合规分数: results.compliance_score
   }
 end</code></pre>
                             </div>
@@ -168,8 +168,8 @@ end</code></pre>
             <div class="container">
                 <div class="features-layout">
                     <div class="features-content">
-                        <h2>Transforme sua visão em realidade</h2>
-                        <p class="section-description">Nossa IA é projetada para lidar com diversos cenários de cobrança de dívidas, mantendo rígidos padrões de conformidade. Suportamos estilos sofisticados de comunicação e estruturas regulatórias para ajudar a otimizar seus processos de cobrança.</p>
+                        <h2>实现您的愿景</h2>
+                        <p class="section-description">我们的AI专为处理各种债务催收场景而设计，同时保持严格的合规标准。我们支持复杂的沟通方式和监管框架，帮助简化您的催收流程。</p>
                     </div>
                     
                     <div class="features-grid">
@@ -177,54 +177,54 @@ end</code></pre>
                             <div class="feature-icon">
                                 <i class="fas fa-check-circle"></i>
                             </div>
-                            <h3>Consistência e Qualidade</h3>
-                            <p>Desempenho padronizado em todas as interações com estilo de comunicação consistente e maior conformidade com requisitos regulatórios.</p>
-                            <a href="#contact" class="feature-link">Saiba mais</a>
+                            <h3>一致性和质量</h3>
+                            <p>所有互动都保持标准化的表现，沟通风格一致，并提高对监管要求的合规性。</p>
+                            <a href="#contact" class="feature-link">了解更多</a>
                         </div>
 
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-expand-arrows-alt"></i>
                             </div>
-                            <h3>Flexível e Escalável</h3>
-                            <p>Expanda ou reduza operações sem esforço com preços pay-as-you-go. Ajuste rapidamente a capacidade para atender às mudanças nas necessidades.</p>
-                            <a href="#contact" class="feature-link">Comece agora</a>
+                            <h3>灵活且可扩展</h3>
+                            <p>按使用付费的定价模式让您轻松扩大或缩减运营规模。快速调整容量以满足不断变化的需求。</p>
+                            <a href="#contact" class="feature-link">立即开始</a>
                         </div>
 
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-brain"></i>
                             </div>
-                            <h3>Sistema Auto-Aprendizado</h3>
-                            <p>Melhora continuamente através de aprendizado por reforço, otimizando estratégias com base em interações e resultados anteriores.</p>
-                            <a href="#contact" class="feature-link">Descubra mais</a>
+                            <h3>自学习系统</h3>
+                            <p>通过强化学习持续改进，基于过往互动和结果优化策略。</p>
+                            <a href="#contact" class="feature-link">了解更多</a>
                         </div>
 
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-chart-line"></i>
                             </div>
-                            <h3>Análises em Tempo Real</h3>
-                            <p>Painéis abrangentes com insights acionáveis sobre desempenho, resultados e estratégias de cobrança.</p>
-                            <a href="#contact" class="feature-link">Saiba mais</a>
+                            <h3>实时分析</h3>
+                            <p>全面的仪表板提供关于性能、结果和催收策略的可操作洞察。</p>
+                            <a href="#contact" class="feature-link">了解更多</a>
                         </div>
 
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-comments"></i>
                             </div>
-                            <h3>Suporte Multicanal</h3>
-                            <p>Interaja efetivamente através de qualquer canal de comunicação com estratégias personalizadas para combinar com a voz da sua marca.</p>
-                            <a href="#contact" class="feature-link">Comece agora</a>
+                            <h3>多渠道支持</h3>
+                            <p>通过任何沟通渠道进行有效互动，采用量身定制的策略匹配您的品牌声音。</p>
+                            <a href="#contact" class="feature-link">立即开始</a>
                         </div>
 
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-language"></i>
                             </div>
-                            <h3>Suporte Multilíngue</h3>
-                            <p>Comunique-se efetivamente em vários idiomas, garantindo cobrança de dívidas clara e culturalmente apropriada em diversas comunidades.</p>
-                            <a href="#contact" class="feature-link">Descubra mais</a>
+                            <h3>多语言支持</h3>
+                            <p>以多种语言进行有效沟通，确保在不同社区中进行清晰且文化适当的债务催收。</p>
+                            <a href="#contact" class="feature-link">了解更多</a>
                         </div>
                     </div>
                 </div>
@@ -233,27 +233,27 @@ end</code></pre>
 
         <section id="benefits" class="section">
             <div class="container">
-                <h2>Transforme Suas Operações</h2>
-                <p class="section-description">Experimente o futuro da cobrança de dívidas com nossa solução alimentada por IA que escala com seu negócio.</p>
+                <h2>转变您的运营</h2>
+                <p class="section-description">体验我们由AI驱动的债务催收解决方案，随您的业务增长而扩展。</p>
 
                 <div class="benefits-list">
                     <div class="benefit-item">
                         <i class="fas fa-chart-line"></i>
-                        <h3>Maior Taxa de Recuperação</h3>
+                        <h3>更高回收率</h3>
                         <div class="stat">2.5x</div>
-                        <p>Otimize estratégias de cobrança em tempo real com insights baseados em IA, levando a taxas de recuperação significativamente melhores por real investido.</p>
+                        <p>通过AI驱动的洞察实时优化催收策略，显著提高每投入资金的回收率。</p>
                     </div>
                     <div class="benefit-item">
                         <i class="fas fa-dollar-sign"></i>
-                        <h3>Redução de Custos</h3>
+                        <h3>成本降低</h3>
                         <div class="stat">-60%</div>
-                        <p>Reduza custos operacionais drasticamente enquanto mantém ou melhora as taxas de cobrança através de processos automatizados e eficientes.</p>
+                        <p>通过自动化、高效的流程大幅降低运营成本，同时保持或提高催收率。</p>
                     </div>
                     <div class="benefit-item">
                         <i class="fas fa-heart"></i>
-                        <h3>Satisfação Aprimorada</h3>
+                        <h3>满意度提升</h3>
                         <div class="stat">95%</div>
-                        <p>Melhore a experiência do cliente com interações consistentes e profissionais e estratégias de comunicação personalizadas.</p>
+                        <p>通过一致、专业的互动和个性化的沟通策略改善客户体验。</p>
                     </div>
                 </div>
             </div>
@@ -263,38 +263,38 @@ end</code></pre>
             <div class="container">
                 <div class="contact-layout">
                     <div class="contact-image">
-                        <img src="mosaic question mark.webp" alt="Ilustração de ponto de interrogação estilizado" class="question-mark-image">
+                        <img src="mosaic question mark.webp" alt="风格化问号插图" class="question-mark-image">
                     </div>
                     <div class="contact-content">
-                        <h2>Pronto para transformar sua cobrança de dívidas?</h2>
-                        <p>Entre em contato com nossa equipe para saber mais sobre nossa solução alimentada por IA e preços para seu negócio.</p>
+                        <h2>准备好转变您的债务催收了吗？</h2>
+                        <p>联系我们的团队，了解更多关于我们的AI解决方案和适合您企业的定价。</p>
                         
                         <form id="contact-form" class="contact-form" action="https://formspree.io/f/xdkopdrv" method="POST">
                             <div class="form-row">
                                 <div class="form-group full-width">
-                                    <label for="name">Nome*</label>
+                                    <label for="name">姓名*</label>
                                     <input type="text" id="name" name="name" required>
                                 </div>
                             </div>
                             
                             <div class="form-group">
-                                <label for="email">Email*</label>
+                                <label for="email">邮箱*</label>
                                 <input type="email" id="email" name="email" required>
                             </div>
                             
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="company">Empresa</label>
+                                    <label for="company">公司</label>
                                     <input type="text" id="company" name="company">
                                 </div>
                                 <div class="form-group">
-                                    <label for="jobTitle">Cargo</label>
+                                    <label for="jobTitle">职位</label>
                                     <input type="text" id="jobTitle" name="job_title">
                                 </div>
                             </div>
                             
                             <div class="form-group">
-                                <label for="message">Mensagem</label>
+                                <label for="message">留言</label>
                                 <textarea id="message" name="message"></textarea>
                             </div>
                             
@@ -303,12 +303,12 @@ end</code></pre>
                                     <input type="checkbox" name="_optin" value="true">
                                     <span class="checkmark"></span>
                                     <span class="consent-text">
-                                        Concordo em receber comunicações da BellmanLoop.
+                                        我同意接收来自博伦的通讯。
                                     </span>
                                 </label>
                             </div>
                             
-                            <button type="submit" class="submit-button">Enviar</button>
+                            <button type="submit" class="submit-button">提交</button>
                         </form>
                     </div>
                 </div>
@@ -320,16 +320,16 @@ end</code></pre>
         <div class="footer-wrapper">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Produto</h3>
-                    <a href="#features">Recursos</a>
-                    <a href="#benefits">Benefícios</a>
+                    <h3>产品</h3>
+                    <a href="#features">功能</a>
+                    <a href="#benefits">优势</a>
                 </div>
                 <div class="footer-section">
-                    <h3>Empresa</h3>
-                    <a href="#">Sobre Nós</a>
+                    <h3>公司</h3>
+                    <a href="#">关于我们</a>
                 </div>
                 <div class="footer-section">
-                    <h3>Contato</h3>
+                    <h3>联系</h3>
                     <a href="mailto:contact@bellmanloop.com">contact@bellmanloop.com</a>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -339,7 +339,7 @@ end</code></pre>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 BellmanLoop. Todos os direitos reservados.</p>
+                <p>&copy; 2024 博伦。保留所有权利。</p>
             </div>
         </div>
     </footer>
