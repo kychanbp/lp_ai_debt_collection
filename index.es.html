@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BellmanLoop | Smart, Scalable, Cost-Effective Debt Collection</title>
+    <title>BellmanLoop | Cobro de Deudas Inteligente, Escalable y Rentable</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,20 +36,20 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#benefits">Benefits</a>
+                <a href="#features">Características</a>
+                <a href="#benefits">Beneficios</a>
                 <div class="language-switcher">
                     <button class="language-button">
-                        <span class="flag-icon">🇺🇸</span>
-                        <span class="language-text">English</span>
+                        <span class="flag-icon">🇪🇸</span>
+                        <span class="language-text">Español</span>
                         <i class="fas fa-chevron-down"></i>
                     </button>
                     <div class="language-dropdown">
-                        <a href="index.html" class="language-option active">
+                        <a href="index.html" class="language-option">
                             <span class="flag-icon">🇺🇸</span>
                             <span class="language-name">English</span>
                         </a>
-                        <a href="index.es.html" class="language-option">
+                        <a href="index.es.html" class="language-option active">
                             <span class="flag-icon">🇪🇸</span>
                             <span class="language-name">Español</span>
                         </a>
@@ -63,7 +63,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="#contact" class="nav-cta-button">Contact Sales</a>
+                <a href="#contact" class="nav-cta-button">Contactar Ventas</a>
             </div>
         </nav>
     </header>
@@ -73,10 +73,10 @@
             <div class="container">
                 <div class="hero-layout">
                     <div class="hero-content">
-                        <h1>Upgrade to Smarter Debt Recovery with BellmanLoop AI</h1>
-                        <p class="hero-description">Managing a team of <span class="highlight">human</span> debt collectors can be unpredictable and time-consuming. <span class="highlight">Productivity</span> varies, <span class="highlight">quality control</span> is a constant struggle, and <span class="highlight">scaling</span> your team to meet demand often requires significant investment in hiring, training, and oversight.</p>
+                        <h1>Mejore su Recuperación de Deudas con BellmanLoop AI</h1>
+                        <p class="hero-description">Gestionar un equipo de cobradores de deudas <span class="highlight">humanos</span> puede ser impredecible y consumir mucho tiempo. La <span class="highlight">productividad</span> varía, el <span class="highlight">control de calidad</span> es una lucha constante, y <span class="highlight">escalar</span> su equipo para satisfacer la demanda generalmente requiere una inversión significativa en contratación, capacitación y supervisión.</p>
                         <div class="hero-cta">
-                            <a href="#contact" class="cta-button">Contact us <i class="fas fa-arrow-right"></i></a>
+                            <a href="#contact" class="cta-button">Contáctenos <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="hero-visual">
@@ -90,42 +90,42 @@
                             </div>
                             <div class="code-content">
                                 <pre class="code-sample active" data-lang="python"><code class="language-python">
-# Initialize AI Debt Collection Agent
+# Inicializar Agente de Cobro AI
 from ai_debt_collection import Agent
 
 agent = Agent(
     model="advanced",
     compliance_level="strict",
-    languages=["en", "es", "zh"]
+    languages=["es", "en", "pt", "zh"]
 )
 
-# Handle multiple cases simultaneously
-async def process_cases(cases):
-    results = await agent.bulk_process(
-        cases,
+# Procesar múltiples casos simultáneamente
+async def procesar_casos(casos):
+    resultados = await agent.bulk_process(
+        casos,
         strategy="optimal",
         max_concurrent=1000
     )
     
     return {
-        "success_rate": results.success_rate,
-        "recovery_amount": results.total_recovered,
-        "compliance_score": results.compliance_score
+        "tasa_exito": resultados.success_rate,
+        "monto_recuperado": resultados.total_recovered,
+        "puntuacion_cumplimiento": resultados.compliance_score
     }</code></pre>
                                 <pre class="code-sample" data-lang="nodejs"><code class="language-javascript">
-// Initialize AI Debt Collection Agent
-const { Agent } = require('ai-debt-collection');
+// Inicializar Agente de Cobro AI
+const { Agent } = require('ai-debt_collection');
 
 const agent = new Agent({
     model: 'advanced',
     complianceLevel: 'strict',
-    languages: ['en', 'es', 'zh']
+    languages: ['es', 'en', 'pt', 'zh']
 });
 
-// Handle multiple cases simultaneously
-async function processCases(cases) {
-    const results = await agent.bulkProcess(
-        cases,
+// Procesar múltiples casos simultáneamente
+async function procesarCasos(casos) {
+    const resultados = await agent.bulkProcess(
+        casos,
         {
             strategy: 'optimal',
             maxConcurrent: 1000
@@ -133,32 +133,32 @@ async function processCases(cases) {
     );
     
     return {
-        successRate: results.successRate,
-        recoveryAmount: results.totalRecovered,
-        complianceScore: results.complianceScore
+        tasaExito: resultados.successRate,
+        montoRecuperado: resultados.totalRecovered,
+        puntuacionCumplimiento: resultados.complianceScore
     };</code></pre>
                                 <pre class="code-sample" data-lang="ruby"><code class="language-ruby">
-# Initialize AI Debt Collection Agent
+# Inicializar Agente de Cobro AI
 require 'ai_debt_collection'
 
 agent = AIDebtCollection::Agent.new(
   model: 'advanced',
   compliance_level: 'strict',
-  languages: ['en', 'es', 'zh']
+  languages: ['es', 'en', 'pt', 'zh']
 )
 
-# Handle multiple cases simultaneously
-def process_cases(cases)
-  results = agent.bulk_process(
-    cases,
+# Procesar múltiples casos simultáneamente
+def procesar_casos(casos)
+  resultados = agent.bulk_process(
+    casos,
     strategy: 'optimal',
     max_concurrent: 1000
   )
   
   {
-    success_rate: results.success_rate,
-    recovery_amount: results.total_recovered,
-    compliance_score: results.compliance_score
+    tasa_exito: resultados.success_rate,
+    monto_recuperado: resultados.total_recovered,
+    puntuacion_cumplimiento: resultados.compliance_score
   }
 end</code></pre>
                             </div>
@@ -172,8 +172,8 @@ end</code></pre>
             <div class="container">
                 <div class="features-layout">
                     <div class="features-content">
-                        <h2>Bring your vision to life</h2>
-                        <p class="section-description">Our AI is designed to handle diverse debt collection scenarios while maintaining strict compliance standards. We support sophisticated communication styles and regulatory frameworks to help streamline your collection processes.</p>
+                        <h2>Haga Realidad su Visión</h2>
+                        <p class="section-description">Nuestra IA está diseñada para manejar diversos escenarios de cobro de deudas mientras mantiene estrictos estándares de cumplimiento. Soportamos estilos sofisticados de comunicación y marcos regulatorios para ayudar a optimizar sus procesos de cobro.</p>
                     </div>
                     
                     <div class="features-grid">
@@ -181,54 +181,54 @@ end</code></pre>
                             <div class="feature-icon">
                                 <i class="fas fa-check-circle"></i>
                             </div>
-                            <h3>Consistency & Quality</h3>
-                            <p>Standardized performance across all interactions with consistent communication style and enhanced compliance with regulatory requirements.</p>
-                            <a href="#contact" class="feature-link">Learn more</a>
+                            <h3>Consistencia y Calidad</h3>
+                            <p>Rendimiento estandarizado en todas las interacciones con estilo de comunicación consistente y mayor cumplimiento de requisitos regulatorios.</p>
+                            <a href="#contact" class="feature-link">Más información</a>
                         </div>
 
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-expand-arrows-alt"></i>
                             </div>
-                            <h3>Flexible & Scalable</h3>
-                            <p>Expand or shrink operations effortlessly with pay-as-you-go pricing. Quickly adjust capacity to meet changing needs.</p>
-                            <a href="#contact" class="feature-link">Get started</a>
+                            <h3>Flexible y Escalable</h3>
+                            <p>Expanda o reduzca operaciones sin esfuerzo con precios de pago por uso. Ajuste rápidamente la capacidad para satisfacer las necesidades cambiantes.</p>
+                            <a href="#contact" class="feature-link">Comenzar</a>
                         </div>
 
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-brain"></i>
                             </div>
-                            <h3>Self-Learning System</h3>
-                            <p>Continuously improves through reinforcement learning, optimizing strategies based on past interactions and outcomes.</p>
-                            <a href="#contact" class="feature-link">Discover more</a>
+                            <h3>Sistema Auto-Aprendizaje</h3>
+                            <p>Mejora continuamente a través del aprendizaje por refuerzo, optimizando estrategias basadas en interacciones y resultados anteriores.</p>
+                            <a href="#contact" class="feature-link">Descubrir más</a>
                         </div>
 
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-chart-line"></i>
                             </div>
-                            <h3>Real-time Analytics</h3>
-                            <p>Comprehensive dashboards with actionable insights into performance, outcomes, and collection strategies.</p>
-                            <a href="#contact" class="feature-link">Learn more</a>
+                            <h3>Análisis en Tiempo Real</h3>
+                            <p>Paneles completos con información procesable sobre rendimiento, resultados y estrategias de cobro.</p>
+                            <a href="#contact" class="feature-link">Más información</a>
                         </div>
 
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-comments"></i>
                             </div>
-                            <h3>Multi-Channel Support</h3>
-                            <p>Engage effectively through any communication channel with tailored strategies to match your brand voice.</p>
-                            <a href="#contact" class="feature-link">Get started</a>
+                            <h3>Soporte Multicanal</h3>
+                            <p>Interactúe efectivamente a través de cualquier canal de comunicación con estrategias personalizadas que coincidan con la voz de su marca.</p>
+                            <a href="#contact" class="feature-link">Comenzar</a>
                         </div>
 
                         <div class="feature-item">
                             <div class="feature-icon">
                                 <i class="fas fa-language"></i>
                             </div>
-                            <h3>Multi-language Support</h3>
-                            <p>Communicate effectively in multiple languages, ensuring clear and culturally appropriate debt collection across diverse communities.</p>
-                            <a href="#contact" class="feature-link">Discover more</a>
+                            <h3>Soporte Multilingüe</h3>
+                            <p>Comuníquese efectivamente en múltiples idiomas, asegurando un cobro de deudas claro y culturalmente apropiado en diversas comunidades.</p>
+                            <a href="#contact" class="feature-link">Descubrir más</a>
                         </div>
                     </div>
                 </div>
@@ -237,27 +237,27 @@ end</code></pre>
 
         <section id="benefits" class="section">
             <div class="container">
-                <h2>Transform Your Operations</h2>
-                <p class="section-description">Experience the future of debt collection with our AI-powered solution that scales with your business.</p>
+                <h2>Transforme sus Operaciones</h2>
+                <p class="section-description">Experimente el futuro del cobro de deudas con nuestra solución impulsada por IA que escala con su negocio.</p>
 
                 <div class="benefits-list">
                     <div class="benefit-item">
                         <i class="fas fa-chart-line"></i>
-                        <h3>Higher Recovery Rate</h3>
+                        <h3>Mayor Tasa de Recuperación</h3>
                         <div class="stat">2.5x</div>
-                        <p>Optimize collection strategies in real-time with AI-driven insights, leading to significantly improved recovery rates per dollar invested.</p>
+                        <p>Optimice las estrategias de cobro en tiempo real con información basada en IA, logrando tasas de recuperación significativamente mejores por cada dólar invertido.</p>
                     </div>
                     <div class="benefit-item">
                         <i class="fas fa-dollar-sign"></i>
-                        <h3>Cost Reduction</h3>
+                        <h3>Reducción de Costos</h3>
                         <div class="stat">-60%</div>
-                        <p>Reduce operational costs dramatically while maintaining or improving collection rates through automated, efficient processes.</p>
+                        <p>Reduzca drásticamente los costos operativos mientras mantiene o mejora las tasas de cobro a través de procesos automatizados y eficientes.</p>
                     </div>
                     <div class="benefit-item">
                         <i class="fas fa-heart"></i>
-                        <h3>Enhanced Satisfaction</h3>
+                        <h3>Satisfacción Mejorada</h3>
                         <div class="stat">95%</div>
-                        <p>Improve customer experience with consistent, professional interactions and personalized communication strategies.</p>
+                        <p>Mejore la experiencia del cliente con interacciones consistentes y profesionales y estrategias de comunicación personalizadas.</p>
                     </div>
                 </div>
             </div>
@@ -267,38 +267,38 @@ end</code></pre>
             <div class="container">
                 <div class="contact-layout">
                     <div class="contact-image">
-                        <img src="mosaic question mark.webp" alt="Stylized question mark illustration" class="question-mark-image">
+                        <img src="mosaic question mark.webp" alt="Ilustración de signo de interrogación estilizado" class="question-mark-image">
                     </div>
                     <div class="contact-content">
-                        <h2>Ready to transform your debt collection?</h2>
-                        <p>Contact our team to learn more about our AI-powered solution and pricing for your business.</p>
+                        <h2>¿Listo para transformar su cobro de deudas?</h2>
+                        <p>Contacte a nuestro equipo para conocer más sobre nuestra solución impulsada por IA y precios para su negocio.</p>
                         
                         <form id="contact-form" class="contact-form" action="https://formspree.io/f/xdkopdrv" method="POST">
                             <div class="form-row">
                                 <div class="form-group full-width">
-                                    <label for="name">Name*</label>
+                                    <label for="name">Nombre*</label>
                                     <input type="text" id="name" name="name" required>
                                 </div>
                             </div>
                             
                             <div class="form-group">
-                                <label for="email">Email*</label>
+                                <label for="email">Correo electrónico*</label>
                                 <input type="email" id="email" name="email" required>
                             </div>
                             
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="company">Company</label>
+                                    <label for="company">Empresa</label>
                                     <input type="text" id="company" name="company">
                                 </div>
                                 <div class="form-group">
-                                    <label for="jobTitle">Job Title</label>
+                                    <label for="jobTitle">Cargo</label>
                                     <input type="text" id="jobTitle" name="job_title">
                                 </div>
                             </div>
                             
                             <div class="form-group">
-                                <label for="message">Message</label>
+                                <label for="message">Mensaje</label>
                                 <textarea id="message" name="message"></textarea>
                             </div>
                             
@@ -307,12 +307,12 @@ end</code></pre>
                                     <input type="checkbox" name="_optin" value="true">
                                     <span class="checkmark"></span>
                                     <span class="consent-text">
-                                        I agree to receive communications from BellmanLoop.
+                                        Acepto recibir comunicaciones de BellmanLoop.
                                     </span>
                                 </label>
                             </div>
                             
-                            <button type="submit" class="submit-button">Submit</button>
+                            <button type="submit" class="submit-button">Enviar</button>
                         </form>
                     </div>
                 </div>
@@ -324,16 +324,16 @@ end</code></pre>
         <div class="footer-wrapper">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Product</h3>
-                    <a href="#features">Features</a>
-                    <a href="#benefits">Benefits</a>
+                    <h3>Producto</h3>
+                    <a href="#features">Características</a>
+                    <a href="#benefits">Beneficios</a>
                 </div>
                 <div class="footer-section">
-                    <h3>Company</h3>
-                    <a href="#">About Us</a>
+                    <h3>Empresa</h3>
+                    <a href="#">Sobre Nosotros</a>
                 </div>
                 <div class="footer-section">
-                    <h3>Contact</h3>
+                    <h3>Contacto</h3>
                     <a href="mailto:contact@bellmanloop.com">contact@bellmanloop.com</a>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -343,7 +343,7 @@ end</code></pre>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 BellmanLoop. All rights reserved.</p>
+                <p>&copy; 2024 BellmanLoop. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
